@@ -21,6 +21,11 @@ namespace API_Gate.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            for (int i = 0; i < 100; i++)
+            {
+                _logger.LogInformation($"{i}-{i * i}");
+            }
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),

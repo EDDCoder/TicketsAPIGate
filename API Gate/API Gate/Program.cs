@@ -1,4 +1,6 @@
 using Serilog;
+using SqlDatabaseManager.Classes;
+using SqlDatabaseManager.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,8 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 builder.Services.AddControllers();
+
+builder.Services.AddSingleton<ISqlDbManager, DapperSqlDbManager>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

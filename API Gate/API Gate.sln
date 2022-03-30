@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API Gate", "API Gate\API Gate.csproj", "{864EAE72-9F82-412D-98FD-5567864FC14B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API Gate", "API Gate\API Gate.csproj", "{864EAE72-9F82-412D-98FD-5567864FC14B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDatabaseManager", "SqlDatabaseManager\SqlDatabaseManager.csproj", "{ADFAE0BF-E6B7-4852-A8E4-C07F98F8CC36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{BB8A2BAC-C831-45E4-8AF3-F7F4DBB3EA8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{864EAE72-9F82-412D-98FD-5567864FC14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{864EAE72-9F82-412D-98FD-5567864FC14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{864EAE72-9F82-412D-98FD-5567864FC14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADFAE0BF-E6B7-4852-A8E4-C07F98F8CC36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADFAE0BF-E6B7-4852-A8E4-C07F98F8CC36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADFAE0BF-E6B7-4852-A8E4-C07F98F8CC36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADFAE0BF-E6B7-4852-A8E4-C07F98F8CC36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB8A2BAC-C831-45E4-8AF3-F7F4DBB3EA8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8A2BAC-C831-45E4-8AF3-F7F4DBB3EA8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8A2BAC-C831-45E4-8AF3-F7F4DBB3EA8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8A2BAC-C831-45E4-8AF3-F7F4DBB3EA8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

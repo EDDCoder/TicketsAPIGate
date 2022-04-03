@@ -1,9 +1,5 @@
-﻿using SqlDatabaseManager.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EngineContracts.Logging;
+using SqlDatabaseManager.Interfaces;
 
 namespace SqlDatabaseManager.Classes
 {
@@ -79,9 +75,13 @@ namespace SqlDatabaseManager.Classes
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> AddTicket()
+        public async Task<ResultInfo> AddTicket()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("123");
+
+            
+
+            return new ResultInfo("","",null,true); 
         }
 
         public Task<ResultInfo> AddTickets()

@@ -1,65 +1,66 @@
-﻿using SqlDatabaseManager.Interfaces;
+﻿using EngineContracts.Logging;
+using SqlDatabaseManager.Interfaces;
 
 namespace SqlDatabaseManager.Classes
 {
     public partial class DapperSqlDbManager : ISqlDbManager
     {
-        public Task<ResultInfo> DeleteAuthor()
+        public Task<ResultInfo> GetAuthor()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteAuthors()
+        public Task<ResultInfo> GetAuthors()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteContactInfo()
+        public Task<ResultInfo> GetContactInfo()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteCountries()
+        public Task<ResultInfo> GetCountries()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteCountry()
+        public Task<ResultInfo> GetCountry()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteManyContactInfo()
+        public Task<ResultInfo> GetManyContactInfo()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteRegion()
+        public Task<ResultInfo> GetRegion()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteRegions()
+        public Task<ResultInfo> GetRegions()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteTag()
+        public Task<ResultInfo> GetTag()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteTags()
+        public Task<ResultInfo> GetTags()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteTicket()
+        public Task<ResultInfo> GetTicket()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> DeleteTickets()
+        public Task<ResultInfo> GetTickets()
         {
             throw new NotImplementedException();
         }

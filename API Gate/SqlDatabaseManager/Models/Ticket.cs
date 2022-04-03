@@ -5,7 +5,7 @@ namespace SqlDatabaseManager.Models
 {
     public partial class Ticket
     {
-        public long[] Offerid { get; set; } = null!;
+        public long? Offerid { get; set; } = null!;
         public bool? Verified { get; set; }
         public long? Region { get; set; }
         public bool? Deleted { get; set; }

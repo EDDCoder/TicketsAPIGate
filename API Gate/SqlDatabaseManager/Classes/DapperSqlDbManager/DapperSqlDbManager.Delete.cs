@@ -1,65 +1,66 @@
-﻿using SqlDatabaseManager.Interfaces;
+﻿using EngineContracts.Logging;
+using SqlDatabaseManager.Interfaces;
 
 namespace SqlDatabaseManager.Classes
 {
-    public partial class DapperSqlDbManager: ISqlDbManager
+    public partial class DapperSqlDbManager : ISqlDbManager
     {
-        public Task<ResultInfo> UpdateAuthor()
+        public Task<ResultInfo> DeleteAuthor()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateAuthors()
+        public Task<ResultInfo> DeleteAuthors()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateContactInfo()
+        public Task<ResultInfo> DeleteContactInfo()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateCountries()
+        public Task<ResultInfo> DeleteCountries()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateCountry()
+        public Task<ResultInfo> DeleteCountry()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateManyContactInfo()
+        public Task<ResultInfo> DeleteManyContactInfo()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateRegion()
+        public Task<ResultInfo> DeleteRegion()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateRegions()
+        public Task<ResultInfo> DeleteRegions()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateTag()
+        public Task<ResultInfo> DeleteTag()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateTags()
+        public Task<ResultInfo> DeleteTags()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateTicket()
+        public Task<ResultInfo> DeleteTicket()
         {
             throw new NotImplementedException();
         }
 
-        public Task<ResultInfo> UpdateTickets()
+        public Task<ResultInfo> DeleteTickets()
         {
             throw new NotImplementedException();
         }

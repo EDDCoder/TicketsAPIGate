@@ -1,4 +1,4 @@
-﻿namespace SqlDatabaseManager.Classes
+﻿namespace EngineContracts.Logging
 {
     public class ResultInfo
     {

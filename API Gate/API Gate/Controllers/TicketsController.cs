@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CoreEngine.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using SqlDatabaseManager.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -11,11 +12,12 @@ namespace API_Gate.Controllers
     {
         private readonly ILogger<TicketsController> _logger;
         private readonly ISqlDbManager _sqlDbManager;
+        private readonly ICoreEngine _coreEngine;
 
-        public TicketsController(ILogger<TicketsController> logger, ISqlDbManager sqlDbManager)
+        public TicketsController(ILogger<TicketsController> logger, ICoreEngine coreEngine)
         {
             _logger = logger;
-            _sqlDbManager = sqlDbManager;
+            _coreEngine = coreEngine;
         }
 
 
@@ -38,7 +40,7 @@ namespace API_Gate.Controllers
         public async Task<IActionResult> AddTickets([FromBody] string value)
         {
 
-            
+            _coreEngine.AddTicket();
 
 
             return StatusCode(403);

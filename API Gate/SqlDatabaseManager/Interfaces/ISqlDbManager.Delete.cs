@@ -1,4 +1,4 @@
-﻿using SqlDatabaseManager.Classes;
+﻿using EngineContracts.Logging;
 
 namespace SqlDatabaseManager.Interfaces
 {

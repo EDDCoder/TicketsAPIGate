@@ -1,3 +1,5 @@
+using CoreEngine.Classes;
+using CoreEngine.Interfaces;
 using Serilog;
 using SqlDatabaseManager.Classes;
 using SqlDatabaseManager.Interfaces;
@@ -11,7 +13,9 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Services.AddControllers();
 
+builder.Services.AddSingleton<ISettings, Settings>();
 builder.Services.AddSingleton<ISqlDbManager, DapperSqlDbManager>();
+builder.Services.AddSingleton<ICoreEngine, SearchEngine>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

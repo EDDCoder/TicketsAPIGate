@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CoreEngine\CoreEngine.csproj" />
     <ProjectReference Include="..\SqlDatabaseManager\SqlDatabaseManager.csproj" />
   </ItemGroup>
 

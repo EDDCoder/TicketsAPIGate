@@ -7,9 +7,14 @@ using System.Threading.Tasks;
 
 namespace SqlDatabaseManager.Classes
 {
-    public class DapperSqlDbManager : ISqlDbManager
+    public partial class DapperSqlDbManager : ISqlDbManager
     {
         public Task<ResultInfo> AddAuthor()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResultInfo> AddAuthorContacts()
         {
             throw new NotImplementedException();
         }
@@ -30,6 +35,21 @@ namespace SqlDatabaseManager.Classes
         }
 
         public Task<ResultInfo> AddCountry()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResultInfo> AddGeolink()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResultInfo> AddGeolinks()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ResultInfo> AddManyAuthorContacts()
         {
             throw new NotImplementedException();
         }

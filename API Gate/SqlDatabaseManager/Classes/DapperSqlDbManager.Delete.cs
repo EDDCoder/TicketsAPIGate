@@ -2,7 +2,7 @@
 
 namespace SqlDatabaseManager.Classes
 {
-    public class DapperSqlDbManager : ISqlDbManager
+    public partial class DapperSqlDbManager : ISqlDbManager
     {
         public Task<ResultInfo> DeleteAuthor()
         {

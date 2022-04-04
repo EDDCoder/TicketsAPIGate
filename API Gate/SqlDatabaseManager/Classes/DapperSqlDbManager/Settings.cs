@@ -13,11 +13,11 @@ namespace CoreEngine.Classes
             _sqlDbManager = sqlDbManager;
         }
 
-        public Task<ResultInfo> AddSettings()
+        public async Task<ResultInfo> AddSettingsAsync(IEnumerable<(string key, string value)> settings)
         {
             Console.WriteLine();
 
-            throw new NotImplementedException();
+            return new ResultInfo("AddSettingsAsync", "All good", null, true);
         }
 
         public Task<(ConcurrentDictionary<string, string>, ResultInfo)> GetSettings()

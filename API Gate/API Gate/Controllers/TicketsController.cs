@@ -40,7 +40,7 @@ namespace API_Gate.Controllers
         public async Task<IActionResult> AddTickets([FromBody] string value)
         {
 
-            _coreEngine.AddTicket();
+            
 
 
             return StatusCode(403);

@@ -5,7 +5,7 @@ namespace CoreEngine.Classes
 {
     public partial interface ISettings
     {
-        public Task<ResultInfo> AddSettings();
+        public Task<ResultInfo> AddSettingsAsync(IEnumerable<(string key, string value)> settings);
 
 
         public Task<(ConcurrentDictionary<string, string>, ResultInfo)> GetSettings();

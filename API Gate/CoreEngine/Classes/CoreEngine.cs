@@ -13,6 +13,13 @@ namespace CoreEngine.Classes
             _sqlDbManager = sqlDbManager;
         }
 
+        public async Task<ResultInfo> AddSettings(IEnumerable<(string key, string value)> settings)
+        {
+            await _sqlDbManager.AddSettingsAsync(settings);
+
+            return null;
+        }
+
         public Task<ResultInfo> AddTicket()
         {
             Console.WriteLine();

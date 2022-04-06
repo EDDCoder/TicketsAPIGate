@@ -15,7 +15,14 @@ namespace CoreEngine.Classes
 
         public async Task<ResultInfo> AddSettings(IEnumerable<(string key, string value)> settings)
         {
-            await _sqlDbManager.AddSettingsAsync(settings);
+            await _sqlDbManager.AddSettingsAsync(settings.Select(setting => new KeyValuePair<string, string>(setting.key,setting.value)));
+
+            return null;
+        }
+
+        public async Task<ResultInfo> AddSettingsAsync(IEnumerable<(string key, string value)> settings)
+        {
+            await _sqlDbManager.AddSettingsAsync(settings.Select(setting => new KeyValuePair<string, string>(setting.key, setting.value)));
 
             return null;
         }
@@ -26,6 +33,11 @@ namespace CoreEngine.Classes
 
             _sqlDbManager.AddTicket();
 
+            throw new NotImplementedException();
+        }
+
+        public Task<ResultInfo> AddTicketAsync()
+        {
             throw new NotImplementedException();
         }
     }

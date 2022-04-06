@@ -7,13 +7,12 @@
         public readonly Exception Exception;
         public readonly bool Success;
 
-        public ResultInfo(string methodName, string message, Exception exception, bool success)
+        public ResultInfo(string methodName, string message = null, Exception exception = null, bool success = true)
         {
             MethodName = methodName;
             Message = message;
             Exception = exception;
             Success = success;
         }
-
     }
 }

@@ -4,6 +4,6 @@ namespace SqlDatabaseManager.Interfaces
 {
     public partial interface ISqlDbManager
     {
-        public Task<ResultInfo> AddSettingsAsync(IEnumerable<(string key, string value)> settings);
+        public Task<ResultInfo> AddSettingsAsync(IEnumerable<KeyValuePair<string, string>> settings);
     }
 }
